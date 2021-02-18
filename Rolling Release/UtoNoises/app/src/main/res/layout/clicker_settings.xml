@@ -228,6 +228,35 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
 
+                                    <TableRow
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <androidx.cardview.widget.CardView
+
+                                            android:layout_marginHorizontal="30dp"
+                                            app:cardCornerRadius="25dp"
+                                            android:layout_weight="1"
+                                            app:cardBackgroundColor="@color/button"
+                                            android:id="@+id/toggle_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <TextView
+                                                android:layout_margin="3dp"
+                                                android:textAlignment="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Toggle"
+                                                android:textColor="@color/blvck"
+                                                android:textSize="18sp" />
+                                        </androidx.cardview.widget.CardView>
+
+
+
+
+                                    </TableRow>
+
 
                                     <TableRow
                                         android:layout_marginBottom="5dp"
@@ -827,7 +856,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Tenshi Giggle*"
+                                            android:text="*tenshi giggle*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -848,7 +877,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*ABC Song*"
+                                            android:text="*ABC song*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -932,7 +961,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Heavy Breathing*"
+                                            android:text="*heavy breathing*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1268,7 +1297,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Tenshi Noises"
+                                            android:text="*tenshi noises*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1478,7 +1507,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Struggling Noises*"
+                                            android:text="*struggling noises*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1499,7 +1528,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Peko Laugh*"
+                                            android:text="*Pekora laugh*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1709,7 +1738,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Tenshi Cries*"
+                                            android:text="*tenshi cries*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1835,7 +1864,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Smug laugh*"
+                                            android:text="*smug laugh*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -1856,7 +1885,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="*Satisfied Noises*"
+                                            android:text="*satisfied noises*"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 
@@ -2129,7 +2158,7 @@
                                             android:layout_weight="1"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Pettan Janai no desu"
+                                            android:text="Pettan janai no desu"
                                             android:textColor="@color/porcelain"
                                             android:textSize="17sp" />
 

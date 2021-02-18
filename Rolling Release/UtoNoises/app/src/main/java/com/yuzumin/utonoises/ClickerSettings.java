@@ -2,6 +2,7 @@ package com.yuzumin.utonoises;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -9,6 +10,7 @@ import android.widget.Switch;
 import android.widget.TableRow;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class ClickerSettings extends AppCompatActivity {
 
@@ -17,6 +19,8 @@ public class ClickerSettings extends AppCompatActivity {
     TableRow UtoIMGRow;
     TableRow UtoIMG1Row;
     TableRow UtoIMG2Row;
+
+    CardView toggle_btn;
 
     Integer charavalue;
 
@@ -230,7 +234,978 @@ public class ClickerSettings extends AppCompatActivity {
 
 
 
+        toggle_btn=findViewById(R.id.toggle_btn);
+        toggle_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch3.isChecked()&&switch4.isChecked()){
 
+                    SoundSettingsEditor =getSharedPreferences("save3",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value3",false);
+                    SoundSettingsEditor.apply();
+                    switch3.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save4",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value4",false);
+                    SoundSettingsEditor.apply();
+                    switch4.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save5",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value5",false);
+                    SoundSettingsEditor.apply();
+                    switch5.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save6",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value6",false);
+                    SoundSettingsEditor.apply();
+                    switch6.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save7",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value7",false);
+                    SoundSettingsEditor.apply();
+                    switch7.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save8",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value8",false);
+                    SoundSettingsEditor.apply();
+                    switch8.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save9",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value9",false);
+                    SoundSettingsEditor.apply();
+                    switch9.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save10",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value10",false);
+                    SoundSettingsEditor.apply();
+                    switch10.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save11",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value11",false);
+                    SoundSettingsEditor.apply();
+                    switch11.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save12",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value12",false);
+                    SoundSettingsEditor.apply();
+                    switch12.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save13",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value13",false);
+                    SoundSettingsEditor.apply();
+                    switch13.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save14",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value14",false);
+                    SoundSettingsEditor.apply();
+                    switch14.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save15",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value15",false);
+                    SoundSettingsEditor.apply();
+                    switch15.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save16",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value16",false);
+                    SoundSettingsEditor.apply();
+                    switch16.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save17",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value17",false);
+                    SoundSettingsEditor.apply();
+                    switch17.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save18",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value18",false);
+                    SoundSettingsEditor.apply();
+                    switch18.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save19",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value19",false);
+                    SoundSettingsEditor.apply();
+                    switch19.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save20",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value20",false);
+                    SoundSettingsEditor.apply();
+                    switch20.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save21",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value21",false);
+                    SoundSettingsEditor.apply();
+                    switch21.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save22",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value22",false);
+                    SoundSettingsEditor.apply();
+                    switch22.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save23",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value23",false);
+                    SoundSettingsEditor.apply();
+                    switch23.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save24",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value24",false);
+                    SoundSettingsEditor.apply();
+                    switch24.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save25",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value25",false);
+                    SoundSettingsEditor.apply();
+                    switch25.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save26",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value26",false);
+                    SoundSettingsEditor.apply();
+                    switch26.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save27",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value27",false);
+                    SoundSettingsEditor.apply();
+                    switch27.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save28",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value28",false);
+                    SoundSettingsEditor.apply();
+                    switch28.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save29",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value29",false);
+                    SoundSettingsEditor.apply();
+                    switch29.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save30",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value30",false);
+                    SoundSettingsEditor.apply();
+                    switch30.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save31",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value31",false);
+                    SoundSettingsEditor.apply();
+                    switch31.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save32",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value32",false);
+                    SoundSettingsEditor.apply();
+                    switch32.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save33",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value33",false);
+                    SoundSettingsEditor.apply();
+                    switch33.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save34",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value34",false);
+                    SoundSettingsEditor.apply();
+                    switch34.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save35",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value35",false);
+                    SoundSettingsEditor.apply();
+                    switch35.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save36",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value36",false);
+                    SoundSettingsEditor.apply();
+                    switch36.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save37",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value37",false);
+                    SoundSettingsEditor.apply();
+                    switch37.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save38",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value38",false);
+                    SoundSettingsEditor.apply();
+                    switch38.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save39",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value39",false);
+                    SoundSettingsEditor.apply();
+                    switch39.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save40",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value40",false);
+                    SoundSettingsEditor.apply();
+                    switch40.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save41",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value41",false);
+                    SoundSettingsEditor.apply();
+                    switch41.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save42",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value42",false);
+                    SoundSettingsEditor.apply();
+                    switch42.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save43",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value43",false);
+                    SoundSettingsEditor.apply();
+                    switch43.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save44",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value44",false);
+                    SoundSettingsEditor.apply();
+                    switch44.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save45",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value45",false);
+                    SoundSettingsEditor.apply();
+                    switch45.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save46",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value46",false);
+                    SoundSettingsEditor.apply();
+                    switch46.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save47",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value47",false);
+                    SoundSettingsEditor.apply();
+                    switch47.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save48",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value48",false);
+                    SoundSettingsEditor.apply();
+                    switch48.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save49",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value49",false);
+                    SoundSettingsEditor.apply();
+                    switch49.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save50",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value50",false);
+                    SoundSettingsEditor.apply();
+                    switch50.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save51",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value51",false);
+                    SoundSettingsEditor.apply();
+                    switch51.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save52",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value52",false);
+                    SoundSettingsEditor.apply();
+                    switch52.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save53",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value53",false);
+                    SoundSettingsEditor.apply();
+                    switch53.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save54",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value54",false);
+                    SoundSettingsEditor.apply();
+                    switch54.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save55",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value55",false);
+                    SoundSettingsEditor.apply();
+                    switch55.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save56",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value56",false);
+                    SoundSettingsEditor.apply();
+                    switch56.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save57",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value57",false);
+                    SoundSettingsEditor.apply();
+                    switch57.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save58",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value58",false);
+                    SoundSettingsEditor.apply();
+                    switch58.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save59",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value59",false);
+                    SoundSettingsEditor.apply();
+                    switch59.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save60",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value60",false);
+                    SoundSettingsEditor.apply();
+                    switch60.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save61",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value61",false);
+                    SoundSettingsEditor.apply();
+                    switch61.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save62",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value62",false);
+                    SoundSettingsEditor.apply();
+                    switch62.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save63",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value63",false);
+                    SoundSettingsEditor.apply();
+                    switch63.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save64",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value64",false);
+                    SoundSettingsEditor.apply();
+                    switch64.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save65",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value65",false);
+                    SoundSettingsEditor.apply();
+                    switch65.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save66",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value66",false);
+                    SoundSettingsEditor.apply();
+                    switch66.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save67",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value67",false);
+                    SoundSettingsEditor.apply();
+                    switch67.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save68",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value68",false);
+                    SoundSettingsEditor.apply();
+                    switch68.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save69",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value69",false);
+                    SoundSettingsEditor.apply();
+                    switch69.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save70",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value70",false);
+                    SoundSettingsEditor.apply();
+                    switch70.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save71",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value71",false);
+                    SoundSettingsEditor.apply();
+                    switch71.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save72",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value72",false);
+                    SoundSettingsEditor.apply();
+                    switch72.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save73",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value73",false);
+                    SoundSettingsEditor.apply();
+                    switch73.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save74",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value74",false);
+                    SoundSettingsEditor.apply();
+                    switch74.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save75",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value75",false);
+                    SoundSettingsEditor.apply();
+                    switch75.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save76",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value76",false);
+                    SoundSettingsEditor.apply();
+                    switch76.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save77",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value77",false);
+                    SoundSettingsEditor.apply();
+                    switch77.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save78",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value78",false);
+                    SoundSettingsEditor.apply();
+                    switch78.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save79",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value79",false);
+                    SoundSettingsEditor.apply();
+                    switch79.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save80",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value80",false);
+                    SoundSettingsEditor.apply();
+                    switch80.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save81",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value81",false);
+                    SoundSettingsEditor.apply();
+                    switch81.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save82",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value82",false);
+                    SoundSettingsEditor.apply();
+                    switch82.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save83",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value83",false);
+                    SoundSettingsEditor.apply();
+                    switch83.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save84",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value84",false);
+                    SoundSettingsEditor.apply();
+                    switch84.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save85",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value85",false);
+                    SoundSettingsEditor.apply();
+                    switch85.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save86",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value86",false);
+                    SoundSettingsEditor.apply();
+                    switch86.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save87",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value87",false);
+                    SoundSettingsEditor.apply();
+                    switch87.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save88",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value88",false);
+                    SoundSettingsEditor.apply();
+                    switch88.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save89",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value89",false);
+                    SoundSettingsEditor.apply();
+                    switch89.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save90",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value90",false);
+                    SoundSettingsEditor.apply();
+                    switch90.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save91",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value91",false);
+                    SoundSettingsEditor.apply();
+                    switch91.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save92",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value92",false);
+                    SoundSettingsEditor.apply();
+                    switch92.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save93",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value93",false);
+                    SoundSettingsEditor.apply();
+                    switch93.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save94",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value94",false);
+                    SoundSettingsEditor.apply();
+                    switch94.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save95",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value95",false);
+                    SoundSettingsEditor.apply();
+                    switch95.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save96",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value96",false);
+                    SoundSettingsEditor.apply();
+                    switch96.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save97",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value97",false);
+                    SoundSettingsEditor.apply();
+                    switch97.setChecked(false);
+
+                }else{
+
+                    SoundSettingsEditor =getSharedPreferences("save3",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value3",true);
+                    SoundSettingsEditor.apply();
+                    switch3.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save4",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value4",true);
+                    SoundSettingsEditor.apply();
+                    switch4.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save5",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value5",true);
+                    SoundSettingsEditor.apply();
+                    switch5.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save6",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value6",true);
+                    SoundSettingsEditor.apply();
+                    switch6.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save7",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value7",true);
+                    SoundSettingsEditor.apply();
+                    switch7.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save8",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value8",true);
+                    SoundSettingsEditor.apply();
+                    switch8.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save9",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value9",true);
+                    SoundSettingsEditor.apply();
+                    switch9.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save10",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value10",true);
+                    SoundSettingsEditor.apply();
+                    switch10.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save11",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value11",true);
+                    SoundSettingsEditor.apply();
+                    switch11.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save12",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value12",true);
+                    SoundSettingsEditor.apply();
+                    switch12.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save13",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value13",true);
+                    SoundSettingsEditor.apply();
+                    switch13.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save14",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value14",true);
+                    SoundSettingsEditor.apply();
+                    switch14.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save15",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value15",true);
+                    SoundSettingsEditor.apply();
+                    switch15.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save16",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value16",true);
+                    SoundSettingsEditor.apply();
+                    switch16.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save17",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value17",true);
+                    SoundSettingsEditor.apply();
+                    switch17.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save18",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value18",true);
+                    SoundSettingsEditor.apply();
+                    switch18.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save19",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value19",true);
+                    SoundSettingsEditor.apply();
+                    switch19.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save20",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value20",true);
+                    SoundSettingsEditor.apply();
+                    switch20.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save21",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value21",true);
+                    SoundSettingsEditor.apply();
+                    switch21.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save22",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value22",true);
+                    SoundSettingsEditor.apply();
+                    switch22.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save23",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value23",true);
+                    SoundSettingsEditor.apply();
+                    switch23.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save24",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value24",true);
+                    SoundSettingsEditor.apply();
+                    switch24.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save25",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value25",true);
+                    SoundSettingsEditor.apply();
+                    switch25.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save26",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value26",true);
+                    SoundSettingsEditor.apply();
+                    switch26.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save27",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value27",true);
+                    SoundSettingsEditor.apply();
+                    switch27.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save28",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value28",true);
+                    SoundSettingsEditor.apply();
+                    switch28.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save29",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value29",true);
+                    SoundSettingsEditor.apply();
+                    switch29.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save30",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value30",true);
+                    SoundSettingsEditor.apply();
+                    switch30.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save31",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value31",true);
+                    SoundSettingsEditor.apply();
+                    switch31.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save32",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value32",true);
+                    SoundSettingsEditor.apply();
+                    switch32.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save33",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value33",true);
+                    SoundSettingsEditor.apply();
+                    switch33.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save34",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value34",true);
+                    SoundSettingsEditor.apply();
+                    switch34.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save35",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value35",true);
+                    SoundSettingsEditor.apply();
+                    switch35.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save36",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value36",true);
+                    SoundSettingsEditor.apply();
+                    switch36.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save37",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value37",true);
+                    SoundSettingsEditor.apply();
+                    switch37.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save38",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value38",true);
+                    SoundSettingsEditor.apply();
+                    switch38.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save39",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value39",true);
+                    SoundSettingsEditor.apply();
+                    switch39.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save40",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value40",true);
+                    SoundSettingsEditor.apply();
+                    switch40.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save41",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value41",true);
+                    SoundSettingsEditor.apply();
+                    switch41.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save42",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value42",true);
+                    SoundSettingsEditor.apply();
+                    switch42.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save43",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value43",true);
+                    SoundSettingsEditor.apply();
+                    switch43.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save44",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value44",true);
+                    SoundSettingsEditor.apply();
+                    switch44.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save45",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value45",true);
+                    SoundSettingsEditor.apply();
+                    switch45.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save46",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value46",true);
+                    SoundSettingsEditor.apply();
+                    switch46.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save47",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value47",true);
+                    SoundSettingsEditor.apply();
+                    switch47.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save48",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value48",true);
+                    SoundSettingsEditor.apply();
+                    switch48.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save49",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value49",true);
+                    SoundSettingsEditor.apply();
+                    switch49.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save50",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value50",true);
+                    SoundSettingsEditor.apply();
+                    switch50.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save51",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value51",true);
+                    SoundSettingsEditor.apply();
+                    switch51.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save52",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value52",true);
+                    SoundSettingsEditor.apply();
+                    switch52.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save53",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value53",true);
+                    SoundSettingsEditor.apply();
+                    switch53.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save54",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value54",true);
+                    SoundSettingsEditor.apply();
+                    switch54.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save55",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value55",true);
+                    SoundSettingsEditor.apply();
+                    switch55.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save56",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value56",true);
+                    SoundSettingsEditor.apply();
+                    switch56.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save57",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value57",true);
+                    SoundSettingsEditor.apply();
+                    switch57.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save58",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value58",true);
+                    SoundSettingsEditor.apply();
+                    switch58.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save59",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value59",true);
+                    SoundSettingsEditor.apply();
+                    switch59.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save60",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value60",true);
+                    SoundSettingsEditor.apply();
+                    switch60.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save61",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value61",true);
+                    SoundSettingsEditor.apply();
+                    switch61.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save62",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value62",true);
+                    SoundSettingsEditor.apply();
+                    switch62.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save63",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value63",true);
+                    SoundSettingsEditor.apply();
+                    switch63.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save64",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value64",true);
+                    SoundSettingsEditor.apply();
+                    switch64.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save65",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value65",true);
+                    SoundSettingsEditor.apply();
+                    switch65.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save66",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value66",true);
+                    SoundSettingsEditor.apply();
+                    switch66.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save67",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value67",true);
+                    SoundSettingsEditor.apply();
+                    switch67.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save68",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value68",true);
+                    SoundSettingsEditor.apply();
+                    switch68.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save69",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value69",true);
+                    SoundSettingsEditor.apply();
+                    switch69.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save70",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value70",true);
+                    SoundSettingsEditor.apply();
+                    switch70.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save71",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value71",true);
+                    SoundSettingsEditor.apply();
+                    switch71.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save72",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value72",true);
+                    SoundSettingsEditor.apply();
+                    switch72.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save73",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value73",true);
+                    SoundSettingsEditor.apply();
+                    switch73.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save74",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value74",true);
+                    SoundSettingsEditor.apply();
+                    switch74.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save75",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value75",true);
+                    SoundSettingsEditor.apply();
+                    switch75.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save76",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value76",true);
+                    SoundSettingsEditor.apply();
+                    switch76.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save77",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value77",true);
+                    SoundSettingsEditor.apply();
+                    switch77.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save78",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value78",true);
+                    SoundSettingsEditor.apply();
+                    switch78.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save79",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value79",true);
+                    SoundSettingsEditor.apply();
+                    switch79.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save80",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value80",true);
+                    SoundSettingsEditor.apply();
+                    switch80.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save81",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value81",true);
+                    SoundSettingsEditor.apply();
+                    switch81.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save82",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value82",true);
+                    SoundSettingsEditor.apply();
+                    switch82.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save83",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value83",true);
+                    SoundSettingsEditor.apply();
+                    switch83.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save84",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value84",true);
+                    SoundSettingsEditor.apply();
+                    switch84.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save85",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value85",true);
+                    SoundSettingsEditor.apply();
+                    switch85.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save86",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value86",true);
+                    SoundSettingsEditor.apply();
+                    switch86.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save87",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value87",true);
+                    SoundSettingsEditor.apply();
+                    switch87.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save88",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value88",true);
+                    SoundSettingsEditor.apply();
+                    switch88.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save89",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value89",true);
+                    SoundSettingsEditor.apply();
+                    switch89.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save90",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value90",true);
+                    SoundSettingsEditor.apply();
+                    switch90.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save91",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value91",true);
+                    SoundSettingsEditor.apply();
+                    switch91.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save92",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value92",true);
+                    SoundSettingsEditor.apply();
+                    switch92.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save93",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value93",true);
+                    SoundSettingsEditor.apply();
+                    switch93.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save94",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value94",true);
+                    SoundSettingsEditor.apply();
+                    switch94.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save95",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value95",true);
+                    SoundSettingsEditor.apply();
+                    switch95.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save96",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value96",true);
+                    SoundSettingsEditor.apply();
+                    switch96.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save97",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value97",true);
+                    SoundSettingsEditor.apply();
+                    switch97.setChecked(true);
+
+                }
+            }
+        });
+        toggle_btn.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_UP) {
+                    toggle_btn.setCardBackgroundColor(getResources().getColor(R.color.button));
+                } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    toggle_btn.setCardBackgroundColor(getResources().getColor(R.color.clearbutton));
+                }
+                return false;
+            }
+        });
 
 
 
