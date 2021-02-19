@@ -32,7 +32,7 @@ GNU General Public License V3
 * utonoise16 10Q Arigatou
 * utonoise17 Nyaaa~~
 * utonoise18 Omedetou Hapi Basuday
-* utonoise19 big yabe
+* utonoise19 Big yabe
 * utonoise20 Moe Moe Kyun
 * utonoise21 NNNNNNNN!
 * utonoise22 Nico Nico Nii
