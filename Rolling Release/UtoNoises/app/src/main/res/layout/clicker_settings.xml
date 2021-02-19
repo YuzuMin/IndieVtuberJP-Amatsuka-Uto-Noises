@@ -2253,6 +2253,111 @@
 
                                     </TableRow>
 
+                                    <TableRow
+                                        android:layout_marginBottom="5dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Gambarimasu Onii Chan"
+                                            android:textColor="#f1f1f1"
+                                            android:textSize="17sp" />
+
+                                        <Switch
+                                            android:id="@+id/switch98"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_marginBottom="5dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="*confused angry noises*"
+                                            android:textColor="#f1f1f1"
+                                            android:textSize="17sp" />
+
+                                        <Switch
+                                            android:id="@+id/switch99"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_marginBottom="5dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Buruh"
+                                            android:textColor="#f1f1f1"
+                                            android:textSize="17sp" />
+
+                                        <Switch
+                                            android:id="@+id/switch100"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_marginBottom="5dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Oboeta"
+                                            android:textColor="#f1f1f1"
+                                            android:textSize="17sp" />
+
+                                        <Switch
+                                            android:id="@+id/switch101"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_marginBottom="5dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Poggars"
+                                            android:textColor="#f1f1f1"
+                                            android:textSize="17sp" />
+
+                                        <Switch
+                                            android:id="@+id/switch102"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </TableRow>
+
 
 
 

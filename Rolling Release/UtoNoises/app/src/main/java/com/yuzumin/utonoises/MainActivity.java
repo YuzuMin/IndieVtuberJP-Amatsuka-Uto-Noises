@@ -135,6 +135,11 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
     boolean switch95;
     boolean switch96;
     boolean switch97;
+    boolean switch98;
+    boolean switch99;
+    boolean switch100;
+    boolean switch101;
+    boolean switch102;
 
 
 
@@ -306,774 +311,6 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
             int num = listofsounds.get(value);
             cleanupMediaPlayer();
 
-
-
-            /*
-            if (num == 3) {
-                noise = MediaPlayer.create(this, R.raw.utonoise1);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "AAAAAAAAAAA!!", Toast.LENGTH_SHORT).show();
-                }
-                set2.start();
-            }else if (num == 4) {
-                noise = MediaPlayer.create(this, R.raw.utonoise2);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Oh?!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 5) {
-                noise = MediaPlayer.create(this, R.raw.utonoise3);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Everyone my friend", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 6) {
-                noise = MediaPlayer.create(this, R.raw.utonoise4);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "You are my little pogchamp", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 7) {
-                noise = MediaPlayer.create(this, R.raw.utonoise5);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*blessed evil laugh*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 8) {
-                noise = MediaPlayer.create(this, R.raw.utonoise6);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "I am angry", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 9) {
-                noise = MediaPlayer.create(this, R.raw.utonoise7);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Watashi Ikatteiru", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 10) {
-                noise = MediaPlayer.create(this, R.raw.utonoise8);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Anata denwa yo", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 11) {
-                noise = MediaPlayer.create(this, R.raw.utonoise9);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "MMMM!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 12) {
-                noise = MediaPlayer.create(this, R.raw.utonoise10);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Iyada x4", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 13) {
-                noise = MediaPlayer.create(this, R.raw.utonoise11);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Tenshi Breathing", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 14) {
-                noise = MediaPlayer.create(this, R.raw.utonoise12);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Yabai yabai", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 15) {
-                noise = MediaPlayer.create(this, R.raw.utonoise13);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*giving headpats*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 16) {
-                noise = MediaPlayer.create(this, R.raw.utonoise14);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Ollie Chan I love you!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 17) {
-                noise = MediaPlayer.create(this, R.raw.utonoise15);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Shinu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 18) {
-                noise = MediaPlayer.create(this, R.raw.utonoise16);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "10Q Arigatou", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 19) {
-                noise = MediaPlayer.create(this, R.raw.utonoise17);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Nyaaa~~", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 20) {
-                noise = MediaPlayer.create(this, R.raw.utonoise18);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Omedetou Hapi Basuday", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 21) {
-                noise = MediaPlayer.create(this, R.raw.utonoise19);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Big yabe", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 22) {
-                noise = MediaPlayer.create(this, R.raw.utonoise20);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Moe Moe Kyun", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 23) {
-                noise = MediaPlayer.create(this, R.raw.utonoise21);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "NNNNNNNN!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 24) {
-                noise = MediaPlayer.create(this, R.raw.utonoise22);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Nico Nico Nii", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 25) {
-                noise = MediaPlayer.create(this, R.raw.utonoise23);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Nice to Meet You", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 26) {
-                noise = MediaPlayer.create(this, R.raw.utonoise24);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "NEEEEEEEEEEEE!!!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 27) {
-                noise = MediaPlayer.create(this, R.raw.utonoise25);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "omae wa mou shindeiru", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 28) {
-                noise = MediaPlayer.create(this, R.raw.utonoise26);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "omae wa mou shindeiru ASMR", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 29) {
-                noise = MediaPlayer.create(this, R.raw.utonoise27);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "LMAO", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 30) {
-                noise = MediaPlayer.create(this, R.raw.utonoise28);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Big Kusa", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 31) {
-                noise = MediaPlayer.create(this, R.raw.utonoise29);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Tenshi Giggle*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 32) {
-                noise = MediaPlayer.create(this, R.raw.utonoise30);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*ABC Song*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 33) {
-                noise = MediaPlayer.create(this, R.raw.utonoise31);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "HMPH", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 34) {
-                noise = MediaPlayer.create(this, R.raw.utonoise32);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Hey Moona", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 35) {
-                noise = MediaPlayer.create(this, R.raw.utonoise33);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Almond Almond", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 36) {
-                noise = MediaPlayer.create(this, R.raw.utonoise34);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Heavy Breathing*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 37) {
-                noise = MediaPlayer.create(this, R.raw.utonoise35);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Arigato Minna", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 38) {
-                noise = MediaPlayer.create(this, R.raw.utonoise36);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Everyone is my husband, Okay?", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 39) {
-                noise = MediaPlayer.create(this, R.raw.utonoise37);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "BUN BUN CHA", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 40) {
-                noise = MediaPlayer.create(this, R.raw.utonoise38);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Onii Chan", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 41) {
-                noise = MediaPlayer.create(this, R.raw.utonoise39);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Papa", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 42) {
-                noise = MediaPlayer.create(this, R.raw.utonoise40);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Ara Ara", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 43) {
-                noise = MediaPlayer.create(this, R.raw.utonoise41);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Pop Pop Pop", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 44) {
-                noise = MediaPlayer.create(this, R.raw.utonoise42);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Step Bro Nani o shimasu ka?", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 45) {
-                noise = MediaPlayer.create(this, R.raw.utonoise43);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Yoshi Yoshi Good Boy", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 46) {
-                noise = MediaPlayer.create(this, R.raw.utonoise44);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Yo Wazzup", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 47) {
-                noise = MediaPlayer.create(this, R.raw.utonoise45);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "I Love Everyone", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 48) {
-                noise = MediaPlayer.create(this, R.raw.utonoise46);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Bye Bye", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 49) {
-                noise = MediaPlayer.create(this, R.raw.utonoise47);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "WAAAAAA!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 50) {
-                noise = MediaPlayer.create(this, R.raw.utonoise48);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Watafaq", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 51) {
-                noise = MediaPlayer.create(this, R.raw.utonoise49);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Im Die Thank You 4ever", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 52) {
-                noise = MediaPlayer.create(this, R.raw.utonoise50);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Tenshi Noises", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 53) {
-                noise = MediaPlayer.create(this, R.raw.utonoise51);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "My New PC", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 54) {
-                noise = MediaPlayer.create(this, R.raw.utonoise52);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Yaaaaay", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 55) {
-                noise = MediaPlayer.create(this, R.raw.utonoise53);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Sugoi Yo", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 56) {
-                noise = MediaPlayer.create(this, R.raw.utonoise54);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Ureshii Nee", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 57) {
-                noise = MediaPlayer.create(this, R.raw.utonoise55);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Very Strong Pc", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 58) {
-                noise = MediaPlayer.create(this, R.raw.utonoise56);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Interesting", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 59) {
-                noise = MediaPlayer.create(this, R.raw.utonoise57);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Pumpkin Pc", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 60) {
-                noise = MediaPlayer.create(this, R.raw.utonoise58);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Eroge suki janai", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 61) {
-                noise = MediaPlayer.create(this, R.raw.utonoise59);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "I am SIMP", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 62) {
-                noise = MediaPlayer.create(this, R.raw.utonoise60);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Struggling Noises*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 63) {
-                noise = MediaPlayer.create(this, R.raw.utonoise61);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Peko Laugh*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 64) {
-                noise = MediaPlayer.create(this, R.raw.utonoise62);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Don't cry", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 65) {
-                noise = MediaPlayer.create(this, R.raw.utonoise63);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Oya Oya", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 66) {
-                noise = MediaPlayer.create(this, R.raw.utonoise64);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Shuba Shuba", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 67) {
-                noise = MediaPlayer.create(this, R.raw.utonoise65);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Subaru Desu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 68) {
-                noise = MediaPlayer.create(this, R.raw.utonoise66);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Haachama Chama", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 69) {
-                noise = MediaPlayer.create(this, R.raw.utonoise67);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Rushia Desu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 70) {
-                noise = MediaPlayer.create(this, R.raw.utonoise68);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Holy coughs", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 71) {
-                noise = MediaPlayer.create(this, R.raw.utonoise69);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "GG Men", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 72) {
-                noise = MediaPlayer.create(this, R.raw.utonoise70);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Otsukaresama deshita", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 73) {
-                noise = MediaPlayer.create(this, R.raw.utonoise71);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Tenshi Cries*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 74) {
-                noise = MediaPlayer.create(this, R.raw.utonoise72);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Study gambare", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 75) {
-                noise = MediaPlayer.create(this, R.raw.utonoise73);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Dinner,Bath or Superchat?", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 76) {
-                noise = MediaPlayer.create(this, R.raw.utonoise74);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Ahoy", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 77) {
-                noise = MediaPlayer.create(this, R.raw.utonoise75);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Marine Desu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 78) {
-                noise = MediaPlayer.create(this, R.raw.utonoise76);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Minna", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 79) {
-                noise = MediaPlayer.create(this, R.raw.utonoise77);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Smug laugh*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 80) {
-                noise = MediaPlayer.create(this, R.raw.utonoise78);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Satisfied Noises*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 81) {
-                noise = MediaPlayer.create(this, R.raw.utonoise79);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "PANIK", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 82) {
-                noise = MediaPlayer.create(this, R.raw.utonoise80);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Pain", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 83) {
-                noise = MediaPlayer.create(this, R.raw.utonoise81);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Onii Chan Asa Dayo", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 84) {
-                noise = MediaPlayer.create(this, R.raw.utonoise82);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Oh My God!", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 85) {
-                noise = MediaPlayer.create(this, R.raw.utonoise83);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Chu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 86) {
-                noise = MediaPlayer.create(this, R.raw.utonoise84);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Nani", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 87) {
-                noise = MediaPlayer.create(this, R.raw.utonoise85);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Doyukoto", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 88) {
-                noise = MediaPlayer.create(this, R.raw.utonoise86);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Nande", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 89) {
-                noise = MediaPlayer.create(this, R.raw.utonoise87);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Konpeko", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 90) {
-                noise = MediaPlayer.create(this, R.raw.utonoise88);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "nab0i mama", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 91) {
-                noise = MediaPlayer.create(this, R.raw.utonoise89);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "No Pettan", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 92) {
-                noise = MediaPlayer.create(this, R.raw.utonoise90);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Normal Pettan", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 93) {
-                noise = MediaPlayer.create(this, R.raw.utonoise91);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Pettan Janai no desu", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 94) {
-                noise = MediaPlayer.create(this, R.raw.utonoise92);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Normal Tenshi", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 95) {
-                noise = MediaPlayer.create(this, R.raw.utonoise93);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "I wink everyday", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 96) {
-                noise = MediaPlayer.create(this, R.raw.utonoise94);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "*Uto's sister*", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else if (num == 97) {
-                noise = MediaPlayer.create(this, R.raw.utonoise95);
-                noise.setOnCompletionListener(listener);
-                noise.start();
-                if (switch1) {
-                    Toast.makeText(this, "Peko peko peko", Toast.LENGTH_SHORT).show();
-                }
-                set1.start();
-            }else{
-                Toast.makeText(this, "NO SOUND SELECTED", Toast.LENGTH_SHORT).show();
-            }
-
-             */
 
             switch (num) {
                 case 3:
@@ -1931,19 +1168,56 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
                     }
                     set1.start();
                     break;
+                case 98:
+                    noise = MediaPlayer.create(this, R.raw.utonoise96);
+                    noise.setOnCompletionListener(listener);
+                    noise.start();
+                    if (switch1) {
+                        Toast.makeText(this, "Gambarimasu Onii Chan", Toast.LENGTH_SHORT).show();
+                    }
+                    set1.start();
+                    break;
+                case 99:
+                    noise = MediaPlayer.create(this, R.raw.utonoise97);
+                    noise.setOnCompletionListener(listener);
+                    noise.start();
+                    if (switch1) {
+                        Toast.makeText(this, "*confused angry noises*", Toast.LENGTH_SHORT).show();
+                    }
+                    set1.start();
+                    break;
+                case 100:
+                    noise = MediaPlayer.create(this, R.raw.utonoise98);
+                    noise.setOnCompletionListener(listener);
+                    noise.start();
+                    if (switch1) {
+                        Toast.makeText(this, "Buruh", Toast.LENGTH_SHORT).show();
+                    }
+                    set1.start();
+                    break;
+                case 101:
+                    noise = MediaPlayer.create(this, R.raw.utonoise99);
+                    noise.setOnCompletionListener(listener);
+                    noise.start();
+                    if (switch1) {
+                        Toast.makeText(this, "Oboeta", Toast.LENGTH_SHORT).show();
+                    }
+                    set1.start();
+                    break;
+                case 102:
+                    noise = MediaPlayer.create(this, R.raw.utonoise100);
+                    noise.setOnCompletionListener(listener);
+                    noise.start();
+                    if (switch1) {
+                        Toast.makeText(this, "Poggars", Toast.LENGTH_SHORT).show();
+                    }
+                    set1.start();
+                    break;
                 default:
                     Toast.makeText(this, "NO SOUND SELECTED", Toast.LENGTH_SHORT).show();
                     break;
             }
-
-
         }
-
-
-
-
-
-
     }
 
 
@@ -2455,9 +1729,31 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
         if (switch97) {
             listofsounds.add(97);
         }
-
-
-
+        SavedSettings =getSharedPreferences("save98", MODE_PRIVATE);
+        switch98= SavedSettings.getBoolean("value98",true);
+        if (switch98) {
+            listofsounds.add(98);
+        }
+        SavedSettings =getSharedPreferences("save99", MODE_PRIVATE);
+        switch99= SavedSettings.getBoolean("value99",true);
+        if (switch99) {
+            listofsounds.add(99);
+        }
+        SavedSettings =getSharedPreferences("save100", MODE_PRIVATE);
+        switch100= SavedSettings.getBoolean("value100",true);
+        if (switch100) {
+            listofsounds.add(100);
+        }
+        SavedSettings =getSharedPreferences("save101", MODE_PRIVATE);
+        switch101= SavedSettings.getBoolean("value101",true);
+        if (switch101) {
+            listofsounds.add(101);
+        }
+        SavedSettings =getSharedPreferences("save102", MODE_PRIVATE);
+        switch102= SavedSettings.getBoolean("value102",true);
+        if (switch102) {
+            listofsounds.add(102);
+        }
     }
 
     @Override

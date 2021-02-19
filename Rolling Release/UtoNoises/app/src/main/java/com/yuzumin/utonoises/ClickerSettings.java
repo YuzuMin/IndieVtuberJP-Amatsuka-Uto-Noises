@@ -125,6 +125,12 @@ public class ClickerSettings extends AppCompatActivity {
     Switch switch95;
     Switch switch96;
     Switch switch97;
+    Switch switch98;
+    Switch switch99;
+    Switch switch100;
+    Switch switch101;
+    Switch switch102;
+
 
     SharedPreferences SoundSettings;
     SharedPreferences.Editor SoundSettingsEditor;
@@ -715,6 +721,32 @@ public class ClickerSettings extends AppCompatActivity {
                     SoundSettingsEditor.apply();
                     switch97.setChecked(false);
 
+                    SoundSettingsEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value98",false);
+                    SoundSettingsEditor.apply();
+                    switch98.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value99",false);
+                    SoundSettingsEditor.apply();
+                    switch99.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value100",false);
+                    SoundSettingsEditor.apply();
+                    switch100.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value101",false);
+                    SoundSettingsEditor.apply();
+                    switch101.setChecked(false);
+
+                    SoundSettingsEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value102",false);
+                    SoundSettingsEditor.apply();
+                    switch102.setChecked(false);
+
+
                 }else{
 
                     SoundSettingsEditor =getSharedPreferences("save3",MODE_PRIVATE).edit();
@@ -1191,6 +1223,31 @@ public class ClickerSettings extends AppCompatActivity {
                     SoundSettingsEditor.putBoolean("value97",true);
                     SoundSettingsEditor.apply();
                     switch97.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value98",true);
+                    SoundSettingsEditor.apply();
+                    switch98.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value99",true);
+                    SoundSettingsEditor.apply();
+                    switch99.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value100",true);
+                    SoundSettingsEditor.apply();
+                    switch100.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value101",true);
+                    SoundSettingsEditor.apply();
+                    switch101.setChecked(true);
+
+                    SoundSettingsEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value102",true);
+                    SoundSettingsEditor.apply();
+                    switch102.setChecked(true);
 
                 }
             }
@@ -3233,7 +3290,7 @@ public class ClickerSettings extends AppCompatActivity {
             }
         });
 
-// for switch 97 to activate
+        // for switch 97 to activate
         switch97=findViewById(R.id.switch97);
         SoundSettings =getSharedPreferences("save97",MODE_PRIVATE);
         switch97.setChecked(SoundSettings.getBoolean("value97",true));
@@ -3253,6 +3310,112 @@ public class ClickerSettings extends AppCompatActivity {
                 }
             }
         });
+
+        // for switch 98 to activate
+        switch98=findViewById(R.id.switch98);
+        SoundSettings =getSharedPreferences("save98",MODE_PRIVATE);
+        switch98.setChecked(SoundSettings.getBoolean("value98",true));
+        switch98.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch98.isChecked()){
+                    SoundSettingsEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value98",true);
+                    SoundSettingsEditor.apply();
+                    switch98.setChecked(true);
+                }else{
+                    SoundSettingsEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value98",false);
+                    SoundSettingsEditor.apply();
+                    switch98.setChecked(false);
+                }
+            }
+        });
+
+        // for switch 99 to activate
+        switch99=findViewById(R.id.switch99);
+        SoundSettings =getSharedPreferences("save99",MODE_PRIVATE);
+        switch99.setChecked(SoundSettings.getBoolean("value99",true));
+        switch99.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch99.isChecked()){
+                    SoundSettingsEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value99",true);
+                    SoundSettingsEditor.apply();
+                    switch99.setChecked(true);
+                }else{
+                    SoundSettingsEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value99",false);
+                    SoundSettingsEditor.apply();
+                    switch99.setChecked(false);
+                }
+            }
+        });
+
+        // for switch 100 to activate
+        switch100=findViewById(R.id.switch100);
+        SoundSettings =getSharedPreferences("save100",MODE_PRIVATE);
+        switch100.setChecked(SoundSettings.getBoolean("value100",true));
+        switch100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch100.isChecked()){
+                    SoundSettingsEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value100",true);
+                    SoundSettingsEditor.apply();
+                    switch100.setChecked(true);
+                }else{
+                    SoundSettingsEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value100",false);
+                    SoundSettingsEditor.apply();
+                    switch100.setChecked(false);
+                }
+            }
+        });
+
+        // for switch 101 to activate
+        switch101=findViewById(R.id.switch101);
+        SoundSettings =getSharedPreferences("save101",MODE_PRIVATE);
+        switch101.setChecked(SoundSettings.getBoolean("value101",true));
+        switch101.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch101.isChecked()){
+                    SoundSettingsEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value101",true);
+                    SoundSettingsEditor.apply();
+                    switch101.setChecked(true);
+                }else{
+                    SoundSettingsEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value101",false);
+                    SoundSettingsEditor.apply();
+                    switch101.setChecked(false);
+                }
+            }
+        });
+
+        // for switch 102 to activate
+        switch102=findViewById(R.id.switch102);
+        SoundSettings =getSharedPreferences("save102",MODE_PRIVATE);
+        switch102.setChecked(SoundSettings.getBoolean("value102",true));
+        switch102.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(switch102.isChecked()){
+                    SoundSettingsEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value102",true);
+                    SoundSettingsEditor.apply();
+                    switch102.setChecked(true);
+                }else{
+                    SoundSettingsEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    SoundSettingsEditor.putBoolean("value102",false);
+                    SoundSettingsEditor.apply();
+                    switch102.setChecked(false);
+                }
+            }
+        });
+
 
 
 
