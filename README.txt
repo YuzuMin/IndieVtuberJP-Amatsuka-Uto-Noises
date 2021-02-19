@@ -93,3 +93,8 @@ utonoise92 Normal Tenshi
 utonoise93 I wink everyday
 utonoise94 Uto's sister
 utonoise95 Peko peko peko
+utonoise96 Gambarimasu Onii Chan
+utonoise97 *confused angry noises*
+utonoise98 Buruh
+utonoise99 Oboeta
+utonoise100 Poggars
