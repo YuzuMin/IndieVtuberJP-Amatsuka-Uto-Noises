@@ -85,7 +85,7 @@ GNU General Public License V3
 * utonoise69 GG Men
 * utonoise70 otsukaresama deshita
 * utonoise71 Tenshi Cries
-* utonoise72 Tenshi Cheer you up to study
+* utonoise72 Study gambare
 * utonoise73 Dinner,Bath or Superchat?
 * utonoise74 Ahoy
 * utonoise75 Marine Desu
