@@ -41,11 +41,8 @@
                         To unlock Developer mode, Goto Settings tap Version at least 7 times, developer mode merely unlocks unstable features that are currently in development\n
                         \n
                         \n</string> <!--Needs translations-->
-    <string name="release_notes_text">/***NEW FEATURES***/\n
-                                •Developer Mode\n
-                                •Asset Download\n
-                                •Button Bar\n
-                                •Auto Click Mode\n
+    <string name="release_notes_text">/***REMOVED FEATURES***/\n
+                                •Alarm Clock (ANDROID INCOMPATIBILITY)\n
                                 \n
                                 \n
                                 /***FIXES***/\n

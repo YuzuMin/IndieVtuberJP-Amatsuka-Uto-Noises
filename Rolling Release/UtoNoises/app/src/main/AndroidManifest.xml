@@ -3,9 +3,6 @@
     package="com.yuzumin.utonoises">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -44,24 +41,6 @@
             android:name="com.yuzumin.utonoises.ClickerSettings"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name="com.yuzumin.utonoises.activities.AlarmActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name="com.yuzumin.utonoises.activities.RingActivity"
-            android:screenOrientation="portrait" />
-
-        <receiver
-            android:exported="true"
-            android:name="com.yuzumin.utonoises.broadcastreceiver.AlarmBroadcastReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <service android:name="com.yuzumin.utonoises.service.AlarmService" />
-        <service android:name="com.yuzumin.utonoises.service.RescheduleAlarmsService" />
 
     </application>
 

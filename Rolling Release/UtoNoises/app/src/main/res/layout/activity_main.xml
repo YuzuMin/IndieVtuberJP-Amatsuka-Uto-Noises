@@ -51,7 +51,6 @@
                     android:textSize="23sp" />
 
                 <ImageView
-                    android:src="@drawable/alarm"
                     android:id="@+id/alarm_btn"
                     android:layout_gravity="center_vertical"
                     android:layout_width="33dp"

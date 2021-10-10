@@ -17,7 +17,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.yuzumin.utonoises.activities.AlarmActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -185,6 +184,7 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
         });
         AlarmBTN=findViewById(R.id.alarm_btn);
         // TO OPEN ALARM LIST ACTIVITY
+        /*
         AlarmBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -199,6 +199,7 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
                 }
             }
         });
+         */
         listener = new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
