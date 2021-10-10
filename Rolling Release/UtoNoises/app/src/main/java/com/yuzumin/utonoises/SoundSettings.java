@@ -144,236 +144,1018 @@ public class SoundSettings extends AppCompatActivity {
         retrievedata();
 
 
-        toggle_btn = findViewById(R.id.toggle_btn);
+        toggle_btn=findViewById(R.id.toggle_btn);
         toggle_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (switch3.isChecked() && switch4.isChecked()) {
+                if(switch3.isChecked()&&switch4.isChecked()){
 
-                    userPreferencesEditor = getSharedPreferences("save3", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value3", false);
+                    userPreferencesEditor =getSharedPreferences("save3",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value3",false);
                     userPreferencesEditor.apply();
                     switch3.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save4", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value4", false);
+                    userPreferencesEditor =getSharedPreferences("save4",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value4",false);
                     userPreferencesEditor.apply();
                     switch4.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save5", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value5", false);
+                    userPreferencesEditor =getSharedPreferences("save5",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value5",false);
                     userPreferencesEditor.apply();
                     switch5.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save6", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value6", false);
+                    userPreferencesEditor =getSharedPreferences("save6",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value6",false);
                     userPreferencesEditor.apply();
                     switch6.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save7", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value7", false);
+                    userPreferencesEditor =getSharedPreferences("save7",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value7",false);
                     userPreferencesEditor.apply();
                     switch7.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save8", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value8", false);
+                    userPreferencesEditor =getSharedPreferences("save8",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value8",false);
                     userPreferencesEditor.apply();
                     switch8.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save9", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value9", false);
+                    userPreferencesEditor =getSharedPreferences("save9",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value9",false);
                     userPreferencesEditor.apply();
                     switch9.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save10", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value10", false);
+                    userPreferencesEditor =getSharedPreferences("save10",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value10",false);
                     userPreferencesEditor.apply();
                     switch10.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save11", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value11", false);
+                    userPreferencesEditor =getSharedPreferences("save11",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value11",false);
                     userPreferencesEditor.apply();
                     switch11.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save12", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value12", false);
+                    userPreferencesEditor =getSharedPreferences("save12",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value12",false);
                     userPreferencesEditor.apply();
                     switch12.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save13", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value13", false);
+                    userPreferencesEditor =getSharedPreferences("save13",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value13",false);
                     userPreferencesEditor.apply();
                     switch13.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save14", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value14", false);
+                    userPreferencesEditor =getSharedPreferences("save14",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value14",false);
                     userPreferencesEditor.apply();
                     switch14.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save15", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value15", false);
+                    userPreferencesEditor =getSharedPreferences("save15",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value15",false);
                     userPreferencesEditor.apply();
                     switch15.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save16", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value16", false);
+                    userPreferencesEditor =getSharedPreferences("save16",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value16",false);
                     userPreferencesEditor.apply();
                     switch16.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save17", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value17", false);
+                    userPreferencesEditor =getSharedPreferences("save17",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value17",false);
                     userPreferencesEditor.apply();
                     switch17.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save18", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value18", false);
+                    userPreferencesEditor =getSharedPreferences("save18",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value18",false);
                     userPreferencesEditor.apply();
                     switch18.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save19", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value19", false);
+                    userPreferencesEditor =getSharedPreferences("save19",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value19",false);
                     userPreferencesEditor.apply();
                     switch19.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save20", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value20", false);
+                    userPreferencesEditor =getSharedPreferences("save20",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value20",false);
                     userPreferencesEditor.apply();
                     switch20.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save21", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value21", false);
+                    userPreferencesEditor =getSharedPreferences("save21",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value21",false);
                     userPreferencesEditor.apply();
                     switch21.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save22", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value22", false);
+                    userPreferencesEditor =getSharedPreferences("save22",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value22",false);
                     userPreferencesEditor.apply();
                     switch22.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save23", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value23", false);
+                    userPreferencesEditor =getSharedPreferences("save23",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value23",false);
                     userPreferencesEditor.apply();
                     switch23.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save24", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value24", false);
+                    userPreferencesEditor =getSharedPreferences("save24",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value24",false);
                     userPreferencesEditor.apply();
                     switch24.setChecked(false);
 
-                } else {
+                    userPreferencesEditor =getSharedPreferences("save25",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value25",false);
+                    userPreferencesEditor.apply();
+                    switch25.setChecked(false);
 
-                    userPreferencesEditor = getSharedPreferences("save3", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value3", true);
+                    userPreferencesEditor =getSharedPreferences("save26",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value26",false);
+                    userPreferencesEditor.apply();
+                    switch26.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save27",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value27",false);
+                    userPreferencesEditor.apply();
+                    switch27.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save28",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value28",false);
+                    userPreferencesEditor.apply();
+                    switch28.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save29",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value29",false);
+                    userPreferencesEditor.apply();
+                    switch29.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save30",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value30",false);
+                    userPreferencesEditor.apply();
+                    switch30.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save31",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value31",false);
+                    userPreferencesEditor.apply();
+                    switch31.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save32",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value32",false);
+                    userPreferencesEditor.apply();
+                    switch32.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save33",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value33",false);
+                    userPreferencesEditor.apply();
+                    switch33.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save34",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value34",false);
+                    userPreferencesEditor.apply();
+                    switch34.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save35",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value35",false);
+                    userPreferencesEditor.apply();
+                    switch35.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save36",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value36",false);
+                    userPreferencesEditor.apply();
+                    switch36.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save37",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value37",false);
+                    userPreferencesEditor.apply();
+                    switch37.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save38",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value38",false);
+                    userPreferencesEditor.apply();
+                    switch38.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save39",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value39",false);
+                    userPreferencesEditor.apply();
+                    switch39.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save40",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value40",false);
+                    userPreferencesEditor.apply();
+                    switch40.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save41",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value41",false);
+                    userPreferencesEditor.apply();
+                    switch41.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save42",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value42",false);
+                    userPreferencesEditor.apply();
+                    switch42.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save43",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value43",false);
+                    userPreferencesEditor.apply();
+                    switch43.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save44",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value44",false);
+                    userPreferencesEditor.apply();
+                    switch44.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save45",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value45",false);
+                    userPreferencesEditor.apply();
+                    switch45.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save46",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value46",false);
+                    userPreferencesEditor.apply();
+                    switch46.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save47",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value47",false);
+                    userPreferencesEditor.apply();
+                    switch47.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save48",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value48",false);
+                    userPreferencesEditor.apply();
+                    switch48.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save49",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value49",false);
+                    userPreferencesEditor.apply();
+                    switch49.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save50",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value50",false);
+                    userPreferencesEditor.apply();
+                    switch50.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save51",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value51",false);
+                    userPreferencesEditor.apply();
+                    switch51.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save52",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value52",false);
+                    userPreferencesEditor.apply();
+                    switch52.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save53",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value53",false);
+                    userPreferencesEditor.apply();
+                    switch53.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save54",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value54",false);
+                    userPreferencesEditor.apply();
+                    switch54.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save55",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value55",false);
+                    userPreferencesEditor.apply();
+                    switch55.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save56",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value56",false);
+                    userPreferencesEditor.apply();
+                    switch56.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save57",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value57",false);
+                    userPreferencesEditor.apply();
+                    switch57.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save58",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value58",false);
+                    userPreferencesEditor.apply();
+                    switch58.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save59",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value59",false);
+                    userPreferencesEditor.apply();
+                    switch59.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save60",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value60",false);
+                    userPreferencesEditor.apply();
+                    switch60.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save61",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value61",false);
+                    userPreferencesEditor.apply();
+                    switch61.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save62",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value62",false);
+                    userPreferencesEditor.apply();
+                    switch62.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save63",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value63",false);
+                    userPreferencesEditor.apply();
+                    switch63.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save64",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value64",false);
+                    userPreferencesEditor.apply();
+                    switch64.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save65",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value65",false);
+                    userPreferencesEditor.apply();
+                    switch65.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save66",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value66",false);
+                    userPreferencesEditor.apply();
+                    switch66.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save67",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value67",false);
+                    userPreferencesEditor.apply();
+                    switch67.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save68",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value68",false);
+                    userPreferencesEditor.apply();
+                    switch68.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save69",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value69",false);
+                    userPreferencesEditor.apply();
+                    switch69.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save70",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value70",false);
+                    userPreferencesEditor.apply();
+                    switch70.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save71",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value71",false);
+                    userPreferencesEditor.apply();
+                    switch71.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save72",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value72",false);
+                    userPreferencesEditor.apply();
+                    switch72.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save73",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value73",false);
+                    userPreferencesEditor.apply();
+                    switch73.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save74",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value74",false);
+                    userPreferencesEditor.apply();
+                    switch74.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save75",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value75",false);
+                    userPreferencesEditor.apply();
+                    switch75.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save76",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value76",false);
+                    userPreferencesEditor.apply();
+                    switch76.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save77",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value77",false);
+                    userPreferencesEditor.apply();
+                    switch77.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save78",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value78",false);
+                    userPreferencesEditor.apply();
+                    switch78.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save79",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value79",false);
+                    userPreferencesEditor.apply();
+                    switch79.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save80",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value80",false);
+                    userPreferencesEditor.apply();
+                    switch80.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save81",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value81",false);
+                    userPreferencesEditor.apply();
+                    switch81.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save82",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value82",false);
+                    userPreferencesEditor.apply();
+                    switch82.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save83",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value83",false);
+                    userPreferencesEditor.apply();
+                    switch83.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save84",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value84",false);
+                    userPreferencesEditor.apply();
+                    switch84.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save85",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value85",false);
+                    userPreferencesEditor.apply();
+                    switch85.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save86",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value86",false);
+                    userPreferencesEditor.apply();
+                    switch86.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save87",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value87",false);
+                    userPreferencesEditor.apply();
+                    switch87.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save88",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value88",false);
+                    userPreferencesEditor.apply();
+                    switch88.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save89",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value89",false);
+                    userPreferencesEditor.apply();
+                    switch89.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save90",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value90",false);
+                    userPreferencesEditor.apply();
+                    switch90.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save91",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value91",false);
+                    userPreferencesEditor.apply();
+                    switch91.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save92",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value92",false);
+                    userPreferencesEditor.apply();
+                    switch92.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save93",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value93",false);
+                    userPreferencesEditor.apply();
+                    switch93.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save94",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value94",false);
+                    userPreferencesEditor.apply();
+                    switch94.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save95",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value95",false);
+                    userPreferencesEditor.apply();
+                    switch95.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save96",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value96",false);
+                    userPreferencesEditor.apply();
+                    switch96.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save97",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value97",false);
+                    userPreferencesEditor.apply();
+                    switch97.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value98",false);
+                    userPreferencesEditor.apply();
+                    switch98.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value99",false);
+                    userPreferencesEditor.apply();
+                    switch99.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value100",false);
+                    userPreferencesEditor.apply();
+                    switch100.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value101",false);
+                    userPreferencesEditor.apply();
+                    switch101.setChecked(false);
+
+                    userPreferencesEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value102",false);
+                    userPreferencesEditor.apply();
+                    switch102.setChecked(false);
+
+                }else{
+
+                    userPreferencesEditor =getSharedPreferences("save3",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value3",true);
                     userPreferencesEditor.apply();
                     switch3.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save4", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value4", true);
+                    userPreferencesEditor =getSharedPreferences("save4",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value4",true);
                     userPreferencesEditor.apply();
                     switch4.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save5", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value5", true);
+                    userPreferencesEditor =getSharedPreferences("save5",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value5",true);
                     userPreferencesEditor.apply();
                     switch5.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save6", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value6", true);
+                    userPreferencesEditor =getSharedPreferences("save6",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value6",true);
                     userPreferencesEditor.apply();
                     switch6.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save7", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value7", true);
+                    userPreferencesEditor =getSharedPreferences("save7",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value7",true);
                     userPreferencesEditor.apply();
                     switch7.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save8", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value8", true);
+                    userPreferencesEditor =getSharedPreferences("save8",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value8",true);
                     userPreferencesEditor.apply();
                     switch8.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save9", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value9", true);
+                    userPreferencesEditor =getSharedPreferences("save9",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value9",true);
                     userPreferencesEditor.apply();
                     switch9.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save10", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value10", true);
+                    userPreferencesEditor =getSharedPreferences("save10",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value10",true);
                     userPreferencesEditor.apply();
                     switch10.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save11", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value11", true);
+                    userPreferencesEditor =getSharedPreferences("save11",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value11",true);
                     userPreferencesEditor.apply();
                     switch11.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save12", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value12", true);
+                    userPreferencesEditor =getSharedPreferences("save12",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value12",true);
                     userPreferencesEditor.apply();
                     switch12.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save13", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value13", true);
+                    userPreferencesEditor =getSharedPreferences("save13",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value13",true);
                     userPreferencesEditor.apply();
                     switch13.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save14", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value14", true);
+                    userPreferencesEditor =getSharedPreferences("save14",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value14",true);
                     userPreferencesEditor.apply();
                     switch14.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save15", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value15", true);
+                    userPreferencesEditor =getSharedPreferences("save15",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value15",true);
                     userPreferencesEditor.apply();
                     switch15.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save16", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value16", true);
+                    userPreferencesEditor =getSharedPreferences("save16",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value16",true);
                     userPreferencesEditor.apply();
                     switch16.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save17", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value17", true);
+                    userPreferencesEditor =getSharedPreferences("save17",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value17",true);
                     userPreferencesEditor.apply();
                     switch17.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save18", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value18", true);
+                    userPreferencesEditor =getSharedPreferences("save18",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value18",true);
                     userPreferencesEditor.apply();
                     switch18.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save19", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value19", true);
+                    userPreferencesEditor =getSharedPreferences("save19",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value19",true);
                     userPreferencesEditor.apply();
                     switch19.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save20", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value20", true);
+                    userPreferencesEditor =getSharedPreferences("save20",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value20",true);
                     userPreferencesEditor.apply();
                     switch20.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save21", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value21", true);
+                    userPreferencesEditor =getSharedPreferences("save21",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value21",true);
                     userPreferencesEditor.apply();
                     switch21.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save22", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value22", true);
+                    userPreferencesEditor =getSharedPreferences("save22",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value22",true);
                     userPreferencesEditor.apply();
                     switch22.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save23", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value23", true);
+                    userPreferencesEditor =getSharedPreferences("save23",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value23",true);
                     userPreferencesEditor.apply();
                     switch23.setChecked(true);
 
-                    userPreferencesEditor = getSharedPreferences("save24", MODE_PRIVATE).edit();
-                    userPreferencesEditor.putBoolean("value24", true);
+                    userPreferencesEditor =getSharedPreferences("save24",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value24",true);
                     userPreferencesEditor.apply();
                     switch24.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save25",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value25",true);
+                    userPreferencesEditor.apply();
+                    switch25.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save26",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value26",true);
+                    userPreferencesEditor.apply();
+                    switch26.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save27",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value27",true);
+                    userPreferencesEditor.apply();
+                    switch27.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save28",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value28",true);
+                    userPreferencesEditor.apply();
+                    switch28.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save29",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value29",true);
+                    userPreferencesEditor.apply();
+                    switch29.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save30",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value30",true);
+                    userPreferencesEditor.apply();
+                    switch30.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save31",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value31",true);
+                    userPreferencesEditor.apply();
+                    switch31.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save32",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value32",true);
+                    userPreferencesEditor.apply();
+                    switch32.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save33",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value33",true);
+                    userPreferencesEditor.apply();
+                    switch33.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save34",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value34",true);
+                    userPreferencesEditor.apply();
+                    switch34.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save35",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value35",true);
+                    userPreferencesEditor.apply();
+                    switch35.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save36",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value36",true);
+                    userPreferencesEditor.apply();
+                    switch36.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save37",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value37",true);
+                    userPreferencesEditor.apply();
+                    switch37.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save38",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value38",true);
+                    userPreferencesEditor.apply();
+                    switch38.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save39",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value39",true);
+                    userPreferencesEditor.apply();
+                    switch39.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save40",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value40",true);
+                    userPreferencesEditor.apply();
+                    switch40.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save41",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value41",true);
+                    userPreferencesEditor.apply();
+                    switch41.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save42",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value42",true);
+                    userPreferencesEditor.apply();
+                    switch42.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save43",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value43",true);
+                    userPreferencesEditor.apply();
+                    switch43.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save44",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value44",true);
+                    userPreferencesEditor.apply();
+                    switch44.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save45",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value45",true);
+                    userPreferencesEditor.apply();
+                    switch45.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save46",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value46",true);
+                    userPreferencesEditor.apply();
+                    switch46.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save47",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value47",true);
+                    userPreferencesEditor.apply();
+                    switch47.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save48",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value48",true);
+                    userPreferencesEditor.apply();
+                    switch48.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save49",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value49",true);
+                    userPreferencesEditor.apply();
+                    switch49.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save50",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value50",true);
+                    userPreferencesEditor.apply();
+                    switch50.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save51",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value51",true);
+                    userPreferencesEditor.apply();
+                    switch51.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save52",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value52",true);
+                    userPreferencesEditor.apply();
+                    switch52.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save53",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value53",true);
+                    userPreferencesEditor.apply();
+                    switch53.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save54",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value54",true);
+                    userPreferencesEditor.apply();
+                    switch54.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save55",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value55",true);
+                    userPreferencesEditor.apply();
+                    switch55.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save56",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value56",true);
+                    userPreferencesEditor.apply();
+                    switch56.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save57",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value57",true);
+                    userPreferencesEditor.apply();
+                    switch57.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save58",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value58",true);
+                    userPreferencesEditor.apply();
+                    switch58.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save59",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value59",true);
+                    userPreferencesEditor.apply();
+                    switch59.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save60",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value60",true);
+                    userPreferencesEditor.apply();
+                    switch60.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save61",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value61",true);
+                    userPreferencesEditor.apply();
+                    switch61.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save62",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value62",true);
+                    userPreferencesEditor.apply();
+                    switch62.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save63",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value63",true);
+                    userPreferencesEditor.apply();
+                    switch63.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save64",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value64",true);
+                    userPreferencesEditor.apply();
+                    switch64.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save65",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value65",true);
+                    userPreferencesEditor.apply();
+                    switch65.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save66",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value66",true);
+                    userPreferencesEditor.apply();
+                    switch66.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save67",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value67",true);
+                    userPreferencesEditor.apply();
+                    switch67.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save68",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value68",true);
+                    userPreferencesEditor.apply();
+                    switch68.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save69",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value69",true);
+                    userPreferencesEditor.apply();
+                    switch69.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save70",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value70",true);
+                    userPreferencesEditor.apply();
+                    switch70.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save71",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value71",true);
+                    userPreferencesEditor.apply();
+                    switch71.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save72",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value72",true);
+                    userPreferencesEditor.apply();
+                    switch72.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save73",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value73",true);
+                    userPreferencesEditor.apply();
+                    switch73.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save74",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value74",true);
+                    userPreferencesEditor.apply();
+                    switch74.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save75",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value75",true);
+                    userPreferencesEditor.apply();
+                    switch75.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save76",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value76",true);
+                    userPreferencesEditor.apply();
+                    switch76.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save77",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value77",true);
+                    userPreferencesEditor.apply();
+                    switch77.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save78",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value78",true);
+                    userPreferencesEditor.apply();
+                    switch78.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save79",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value79",true);
+                    userPreferencesEditor.apply();
+                    switch79.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save80",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value80",true);
+                    userPreferencesEditor.apply();
+                    switch80.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save81",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value81",true);
+                    userPreferencesEditor.apply();
+                    switch81.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save82",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value82",true);
+                    userPreferencesEditor.apply();
+                    switch82.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save83",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value83",true);
+                    userPreferencesEditor.apply();
+                    switch83.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save84",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value84",true);
+                    userPreferencesEditor.apply();
+                    switch84.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save85",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value85",true);
+                    userPreferencesEditor.apply();
+                    switch85.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save86",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value86",true);
+                    userPreferencesEditor.apply();
+                    switch86.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save87",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value87",true);
+                    userPreferencesEditor.apply();
+                    switch87.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save88",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value88",true);
+                    userPreferencesEditor.apply();
+                    switch88.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save89",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value89",true);
+                    userPreferencesEditor.apply();
+                    switch89.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save90",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value90",true);
+                    userPreferencesEditor.apply();
+                    switch90.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save91",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value91",true);
+                    userPreferencesEditor.apply();
+                    switch91.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save92",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value92",true);
+                    userPreferencesEditor.apply();
+                    switch92.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save93",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value93",true);
+                    userPreferencesEditor.apply();
+                    switch93.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save94",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value94",true);
+                    userPreferencesEditor.apply();
+                    switch94.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save95",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value95",true);
+                    userPreferencesEditor.apply();
+                    switch95.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save96",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value96",true);
+                    userPreferencesEditor.apply();
+                    switch96.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save97",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value97",true);
+                    userPreferencesEditor.apply();
+                    switch97.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save98",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value98",true);
+                    userPreferencesEditor.apply();
+                    switch98.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save99",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value99",true);
+                    userPreferencesEditor.apply();
+                    switch99.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save100",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value100",true);
+                    userPreferencesEditor.apply();
+                    switch100.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save101",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value101",true);
+                    userPreferencesEditor.apply();
+                    switch101.setChecked(true);
+
+                    userPreferencesEditor =getSharedPreferences("save102",MODE_PRIVATE).edit();
+                    userPreferencesEditor.putBoolean("value102",true);
+                    userPreferencesEditor.apply();
+                    switch102.setChecked(true);
+
                 }
             }
         });
+
 // for switch 3 to activate
         switch3= findViewById(R.id.switch3);
         userPreferences =getSharedPreferences("save3",MODE_PRIVATE);

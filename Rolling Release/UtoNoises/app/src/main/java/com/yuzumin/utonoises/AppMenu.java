@@ -60,7 +60,7 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://www.youtube.com/user/tanigox"));
+                i.setData(Uri.parse("https://www.youtube.com/channel/UCdYR5Oyz8Q4g0ZmB4PkTD7g"));
                 startActivity(i);
             }
         });
@@ -195,9 +195,9 @@ public class AppMenu extends AppCompatActivity {
             public void onClick(View v) {
                 /*
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://drive.google.com/drive/folders/1q6oL0BCMz3zmzWKFGhTEu6YTOxSUJj7G?usp=sharing"));
+                i.setData(Uri.parse("https://drive.google.com/drive/folders/18_9qmTujfwj8xV9CHjrJB0NeBqpxaYur?usp=sharing"));
                 startActivity(i);
-                 */
+                */
 
                 Intent intent;
                 intent = new Intent(AppMenu.this, AssetDownload.class);

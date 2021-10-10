@@ -1,13 +1,14 @@
 <resources>
     <!--MainActivity-->
-    <string name="app_name">Uto Noises</string>
-    <string name="press_vtuber">Press Uto!</string>
+    <string name="app_name">Uto Noises</string>         <!--Needs translations-->
+    <string name="press_vtuber">Press Uto!</string>     <!--Needs translations-->
     <string name="sit_back">Sit Back &amp; Chill</string>
     <!--AppMenu-->
     <string name="version">Version</string>
     <string name="app_version" translatable="false">2021.10 REV-2</string>
+    <string name="youtubeChannelName" translatable="false">Uto Ch. 天使うと</string>
     <string name="youtube_channel">Youtube Channel</string>
-    <string name="channel_tagline">Yagoo best girl!</string>
+    <string name="channel_tagline">Become A Tenshimp!</string>
     <string name="clicker_settings">Clicker Settings</string>
     <string name="sounds">Sounds</string>
     <string name="downloads">Downloads</string>
@@ -39,7 +40,7 @@
                         4. DEVELOPER MODE\n
                         To unlock Developer mode, Goto Settings tap Version at least 7 times, developer mode merely unlocks unstable features that are currently in development\n
                         \n
-                        \n</string>
+                        \n</string> <!--Needs translations-->
     <string name="release_notes_text">/***NEW FEATURES***/\n
                                 •Developer Mode\n
                                 •Asset Download\n
@@ -156,5 +157,6 @@
     <string name="noise98_text" translatable="false">Buruh</string>
     <string name="noise99_text" translatable="false">Oboeta</string>
     <string name="noise100_text" translatable="false">Poggars</string>
+
 
 </resources>

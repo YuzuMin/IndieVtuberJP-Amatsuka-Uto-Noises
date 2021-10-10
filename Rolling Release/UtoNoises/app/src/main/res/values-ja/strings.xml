@@ -1,13 +1,13 @@
 <resources>
 
     <!--MainActivity-->
-    <string name = "app_name"> うとノイズ</string>
-    <string name = "press_vtuber"> うとを押して！</string>
+    <string name = "app_name"> うとノイズ</string>           <!--Needs translations-->
+    <string name = "press_vtuber"> うとを押して！</string>     <!--Needs translations-->
     <string name = "sit_back">座ってリラックス</string>
     <!--AppMenu-->
     <string name = "version">バージョン</string>
     <string name = "youtube_channel"> YouTubeチャンネル</string>
-    <string name = "channel_tagline"> Yagooの最高！</string>
+    <string name = "channel_tagline"> うと最高！</string> <!--Needs translations-->
     <string name = "clicker_settings">クリッカー設定</string>
     <string name = "sounds">サウンド</string>
     <string name = "downloads">ダウンロード</string>
@@ -31,7 +31,7 @@
                             画面の指示に従って、文字をクリックするだけです。\n
                             \n
                             2.自動クリック\n
-                            「Yagooを押してください」という単語をタップすると、テキストは「座ってリラックス」になります。これにより、アプリはランダムノイズを継続的に自動再生できます\n
+                            「うとを押してください」という単語をタップすると、テキストは「座ってリラックス」になります。これにより、アプリはランダムノイズを継続的に自動再生できます\n
                             \n
                             3.アセットをダウンロード\n
                             [設定]メニューに移動すると、[ダウンロード]というボタンが表示されます。ここでオーディオ、画像、ビデオを見ることができます\n
@@ -39,7 +39,7 @@
                             4.開発者モード\ n
                             開発者モードのロックを解除するには、[設定]に移動して[バージョン]を7回以上タップします。開発者モードでは、現在開発中の不安定な機能のロックを解除するだけです\n
                             \n
-                            \n</string>
+                            \n</string><!--Needs translations-->
     <string name = "release_notes_text"> / ***新機能*** / \n
                                     •開発者モード\n
                                     •アセットのダウンロード\n

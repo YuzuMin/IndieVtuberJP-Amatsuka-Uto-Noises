@@ -70,7 +70,7 @@ public class CreateAlarmFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 scheduleAlarm();
-                Navigation.findNavController(v).navigate(R.id.action_createAlarmFragment_to_alarmsListFragment);
+                Navigation.findNavController(v).popBackStack();     //finish fragment
             }
         });
 
@@ -101,4 +101,6 @@ public class CreateAlarmFragment extends Fragment {
 
         alarm.schedule(getContext());
     }
+
+
 }
