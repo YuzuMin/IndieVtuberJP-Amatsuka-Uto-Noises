@@ -193,15 +193,15 @@ public class AppMenu extends AppCompatActivity {
         AppDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://drive.google.com/drive/folders/18_9qmTujfwj8xV9CHjrJB0NeBqpxaYur?usp=sharing"));
+                i.setData(Uri.parse("https://github.com/YuzuMin/IndieVtuberJP-Amatsuka-Uto-Noises/tree/main/Assets"));
                 startActivity(i);
-                */
 
+                /*
                 Intent intent;
                 intent = new Intent(AppMenu.this, AssetDownload.class);
                 startActivity(intent);
+                 */
             }
         });
         AppDownload.setOnTouchListener(new View.OnTouchListener() {

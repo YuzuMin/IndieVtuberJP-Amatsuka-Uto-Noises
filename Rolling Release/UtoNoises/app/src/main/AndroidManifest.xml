@@ -16,9 +16,6 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.yuzumin.utonoises.AssetDownload"
-            android:exported="true" />
-        <activity
             android:name="com.yuzumin.utonoises.SoundSettings"
             android:exported="true" />
         <activity
