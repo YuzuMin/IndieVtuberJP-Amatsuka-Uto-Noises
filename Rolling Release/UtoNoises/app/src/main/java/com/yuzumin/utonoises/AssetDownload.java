@@ -117,7 +117,8 @@ public class AssetDownload extends AppCompatActivity {
     ImageView switch101;
     ImageView switch102;
 
-    String mainDirectory="https://github.com/YuzuMin/Hololive-CEO-Yagoo-Noises/raw/main/Assets/";
+    //String mainDirectory="https://github.com/YuzuMin/Hololive-CEO-Yagoo-Noises/raw/main/Assets/";
+    String mainDirectory="https://github.com/YuzuMin/IndieVtuberJP-Amatsuka-Uto-Noises/raw/main/Assets/";
     String audioDirectory="Audio/";
     String imageDirectory="Image/";
     String videoDirectory="Video/";
