@@ -39,11 +39,8 @@
                         要解锁开发者模式，转到设置点按版本至少 7 次，开发者模式仅解锁当前正在开发的不稳定功能。\n
                         \n
                         \n</string> <!--Needs translations-->
-    <string name="release_notes_text">/***新功能***/\n
-                                •开发者模式\n
-                                •资产下载\n
-                                •按钮栏\n
-                                •自动点击\n
+    <string name="release_notes_text">/***删除的功能***/\n
+                                •闹钟（安卓不兼容） \n
                                 \n
                                 \n
                                 /***修复***/\n
