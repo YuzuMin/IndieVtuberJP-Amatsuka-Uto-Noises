@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,11 +18,15 @@ public class AppMenu extends AppCompatActivity {
 
     CardView AppYoutube;
     CardView AppVersion;
-    CardView LegalInformation;
+    CardView NotificationView;
+    ImageView NotificationImage;
+    TextView NotificationText;
 
-    CardView Sound_Settings;
-    CardView AppDownload;
-    CardView MoreApps;
+    LinearLayout Clicker_Settings;
+    LinearLayout Sound_Settings;
+    LinearLayout AppDownload;
+    LinearLayout LegalInformation;
+    LinearLayout MoreApps;
 
     Integer DevCount=1;
 
@@ -93,13 +99,23 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_UP) {
-                    AppVersion.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
-                } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
                     AppVersion.setCardBackgroundColor(getResources().getColor(R.color.blvck));
+                } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    AppVersion.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
                 }
                 return false;
             }
         });
+
+        NotificationView=findViewById(R.id.notification_view);
+        NotificationImage=findViewById(R.id.notification_image);
+        NotificationText=findViewById(R.id.notification_text);
+        sharedPreferences =getSharedPreferences("serverActivation", MODE_PRIVATE);
+        if (sharedPreferences.getBoolean("isActivated", false)) {
+            NotificationView.setCardBackgroundColor(getResources().getColor(R.color.greenColor));
+            NotificationImage.setImageResource(R.drawable.tick);
+            NotificationText.setText(R.string.activated);
+        }
 
 
         //View Privacy policy and User Agreement and Terms of use
@@ -116,9 +132,32 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_UP) {
-                    LegalInformation.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
+                    LegalInformation.setBackgroundColor(getResources().getColor(R.color.darkblvck));
                 } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    LegalInformation.setCardBackgroundColor(getResources().getColor(R.color.blvck));
+                    LegalInformation.setBackgroundColor(getResources().getColor(R.color.blvck));
+                }
+                return false;
+            }
+        });
+
+
+        //Open SoundSettings to change settings
+        Clicker_Settings=findViewById(R.id.clicker);
+        Clicker_Settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(AppMenu.this, ClickerSettings.class);
+                startActivity(intent);
+            }
+        });
+        Clicker_Settings.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_UP) {
+                    Clicker_Settings.setBackgroundColor(getResources().getColor(R.color.darkblvck));
+                } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
+                    Clicker_Settings.setBackgroundColor(getResources().getColor(R.color.blvck));
                 }
                 return false;
             }
@@ -131,7 +170,7 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(AppMenu.this, ClickerSettings.class);
+                intent = new Intent(AppMenu.this, SoundSettings.class);
                 startActivity(intent);
             }
         });
@@ -139,9 +178,9 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_UP) {
-                    Sound_Settings.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
+                    Sound_Settings.setBackgroundColor(getResources().getColor(R.color.darkblvck));
                 } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    Sound_Settings.setCardBackgroundColor(getResources().getColor(R.color.blvck));
+                    Sound_Settings.setBackgroundColor(getResources().getColor(R.color.blvck));
                 }
                 return false;
             }
@@ -155,17 +194,23 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://drive.google.com/drive/folders/18_9qmTujfwj8xV9CHjrJB0NeBqpxaYur?usp=sharing"));
+                i.setData(Uri.parse("https://github.com/YuzuMin/IndieVtuberJP-Amatsuka-Uto-Noises/tree/main/Assets"));
                 startActivity(i);
+
+                /*
+                Intent intent;
+                intent = new Intent(AppMenu.this, AssetDownload.class);
+                startActivity(intent);
+                 */
             }
         });
         AppDownload.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_UP) {
-                    AppDownload.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
+                    AppDownload.setBackgroundColor(getResources().getColor(R.color.darkblvck));
                 } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    AppDownload.setCardBackgroundColor(getResources().getColor(R.color.blvck));
+                    AppDownload.setBackgroundColor(getResources().getColor(R.color.blvck));
                 }
                 return false;
             }
@@ -187,14 +232,12 @@ public class AppMenu extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_UP) {
-                    MoreApps.setCardBackgroundColor(getResources().getColor(R.color.darkblvck));
+                    MoreApps.setBackgroundColor(getResources().getColor(R.color.darkblvck));
                 } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    MoreApps.setCardBackgroundColor(getResources().getColor(R.color.blvck));
+                    MoreApps.setBackgroundColor(getResources().getColor(R.color.blvck));
                 }
                 return false;
             }
         });
-
-
     }
 }

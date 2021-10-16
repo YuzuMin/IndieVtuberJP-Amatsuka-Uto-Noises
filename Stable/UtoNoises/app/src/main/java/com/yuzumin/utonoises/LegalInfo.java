@@ -13,9 +13,8 @@ public class LegalInfo extends AppCompatActivity {
 
 
     ImageView back_btn;
-    LinearLayout Terms_And_Conditions;
-    LinearLayout Privacy_Policy;
-    LinearLayout License;
+    LinearLayout InstructionManual;
+    LinearLayout AppLicense;
     LinearLayout ReleaseNotes;
 
 
@@ -35,70 +34,39 @@ public class LegalInfo extends AppCompatActivity {
 
 
         //Press to open Reader activity to read stuff
-        Terms_And_Conditions=findViewById(R.id.terms_and_conditions);
-        Terms_And_Conditions.setOnClickListener(click_UA);
-        Terms_And_Conditions.setOnTouchListener(touch_UA);
+        InstructionManual =findViewById(R.id.instruction_manual);
+        InstructionManual.setOnClickListener(click_IM);
+        InstructionManual.setOnTouchListener(touch_IM);
 
-        Privacy_Policy=findViewById(R.id.privacy_policy);
-        Privacy_Policy.setOnClickListener(click_PP);
-        Privacy_Policy.setOnTouchListener(touch_PP);
+        AppLicense =findViewById(R.id.app_license);
+        AppLicense.setOnClickListener(click_LC);
+        AppLicense.setOnTouchListener(touch_LC);
 
-        License=findViewById(R.id.Licensing);
-        License.setOnClickListener(click_LC);
-        License.setOnTouchListener(touch_LC);
-
-        ReleaseNotes=findViewById(R.id.ReleaseNotes);
+        ReleaseNotes=findViewById(R.id.release_notes);
         ReleaseNotes.setOnClickListener(click_RN);
         ReleaseNotes.setOnTouchListener(touch_RN);
 
     }
 
-    private final View.OnClickListener click_UA=new View.OnClickListener() {
+    private final View.OnClickListener click_IM =new View.OnClickListener() {
         //To open version activity
         @Override
         public void onClick(View v) {
             Intent intent;
-            intent=new Intent(LegalInfo.this,Reader.class);
-            intent.putExtra("Value",2); //sends a 1 to reader activity to show user agreement
+            intent=new Intent(LegalInfo.this, InfoReader.class);
+            intent.putExtra("Value",0); //sends a 1 to reader activity to show user agreement
             startActivity(intent);
         }
     };
-
-    private final View.OnTouchListener touch_UA= new View.OnTouchListener() {
+    private final View.OnTouchListener touch_IM = new View.OnTouchListener() {
         //To change button color from dark blvck to blvck
         @Override
         public boolean onTouch(View v, MotionEvent event) {
             if(event.getAction() == MotionEvent.ACTION_UP) {
-                Terms_And_Conditions.setBackgroundColor(getResources().getColor(R.color.darkblvck));
+                InstructionManual.setBackgroundColor(getResources().getColor(R.color.darkblvck));
 
             } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                Terms_And_Conditions.setBackgroundColor(getResources().getColor(R.color.blvck));
-            }
-            return false;
-        }
-    };
-
-
-    private final View.OnClickListener click_PP=new View.OnClickListener() {
-        //To open version activity
-        @Override
-        public void onClick(View v) {
-            Intent intent;
-            intent=new Intent(LegalInfo.this,Reader.class);
-            intent.putExtra("Value",0); //sends a 2 to reader activity to show click privacy policy
-            startActivity(intent);
-        }
-    };
-
-    private final View.OnTouchListener touch_PP= new View.OnTouchListener() {
-        //To change button color from dark blvck to blvck
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            if(event.getAction() == MotionEvent.ACTION_UP) {
-                Privacy_Policy.setBackgroundColor(getResources().getColor(R.color.darkblvck));
-
-            } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                Privacy_Policy.setBackgroundColor(getResources().getColor(R.color.blvck));
+                InstructionManual.setBackgroundColor(getResources().getColor(R.color.blvck));
             }
             return false;
         }
@@ -110,26 +78,24 @@ public class LegalInfo extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent;
-            intent=new Intent(LegalInfo.this,Reader.class);
+            intent=new Intent(LegalInfo.this, InfoReader.class);
             intent.putExtra("Value",1); //sends a 3 to reader activity to show click license
             startActivity(intent);
         }
     };
-
     private final View.OnTouchListener touch_LC= new View.OnTouchListener() {
         //To change button color from dark blvck to blvck
         @Override
         public boolean onTouch(View v, MotionEvent event) {
             if(event.getAction() == MotionEvent.ACTION_UP) {
-                License.setBackgroundColor(getResources().getColor(R.color.darkblvck));
+                AppLicense.setBackgroundColor(getResources().getColor(R.color.darkblvck));
 
             } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                License.setBackgroundColor(getResources().getColor(R.color.blvck));
+                AppLicense.setBackgroundColor(getResources().getColor(R.color.blvck));
             }
             return false;
         }
     };
-
 
 
     private final View.OnClickListener click_RN=new View.OnClickListener() {
@@ -137,12 +103,11 @@ public class LegalInfo extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent;
-            intent=new Intent(LegalInfo.this,Reader.class);
-            intent.putExtra("Value",3); //sends a 3 to reader activity to show click license
+            intent=new Intent(LegalInfo.this, InfoReader.class);
+            intent.putExtra("Value",2); //sends a 3 to reader activity to show click license
             startActivity(intent);
         }
     };
-
     private final View.OnTouchListener touch_RN= new View.OnTouchListener() {
         //To change button color from dark blvck to blvck
         @Override
