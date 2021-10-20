@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
     AnimatorSet set1, set2;
 
     SharedPreferences userPreferences;
+    SharedPreferences.Editor userPreferencesEditor;
 
     TextView AppName;
     boolean isFullAuto;
@@ -158,7 +159,11 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
 
     @Override
     public void OnUpdated(int count) {
-        userPreferences.edit().putInt("count", count).apply();
+        //userPreferencesEditor.putInt("count", count).apply();
+        userPreferencesEditor = getSharedPreferences("count",MODE_PRIVATE).edit();
+        userPreferencesEditor.putInt("count", count);
+        userPreferencesEditor.apply();
+
         textCount.setText(String.format("Count: %d", count));
     }
 
@@ -204,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements Count.CountListen
             @Override
             public void onCompletion(MediaPlayer mp) {
                 cleanupMediaPlayer();
+
                 if(isFullAuto){
                     startRandomSound();
                 }
