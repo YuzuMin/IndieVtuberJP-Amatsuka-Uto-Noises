@@ -13,11 +13,11 @@ The interface of Uto Noises is designed to be simple, intuitive and efficient. B
 
 # Features
 * 100 Noises
-* Alarm Clock
-* Google Drive Download
+* GitHub Download
 
 # License
-GNU General Public License V3
+MIT License
+
 
 # List of Noises
 * utonoise1 AAAAAAAAAAA!!
